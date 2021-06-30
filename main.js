@@ -3,9 +3,17 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const modal = document.getElementById("modal")
+const likeButton = document.getElementsByClassName("like")
 
 
 
+//when user clicks on empty_heart invoke mimicserver
+function like(event){
+event.addEventListener("click", mimicServerCall)
+
+
+}
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
